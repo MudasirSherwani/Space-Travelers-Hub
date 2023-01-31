@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import RocketsPage from './components/rockets/Rockets';
 import MyProfilePage from './components/profile/MyProfile';
-import MissionsPage from './components/missions/Missions';
+import MissionsLogic from './components/missions/missionLogic';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<RocketsPage />} />
-          <Route path="/missions" element={<MissionsPage />} />
+          <Route path="/missions" element={<MissionsLogic />} />
           <Route path="/myProfile" element={<MyProfilePage />} />
         </Routes>
       </header>

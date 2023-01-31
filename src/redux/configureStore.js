@@ -3,7 +3,7 @@ import reducerForMission from './mission/missionFetch';
 
 const store = configureStore({
   reducer: {
-    mission: reducerForMission,
+    Missions: reducerForMission,
   },
 });
 

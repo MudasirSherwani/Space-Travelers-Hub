@@ -23,7 +23,7 @@ export const CallMissionApi = () => async (dispatch) => {
     mission_name: missionData.mission_name,
     description: missionData.description,
   }));
+
   dispatch(fetchMissionData(DataRecieved));
 };
-
 export default reducerForMission;
