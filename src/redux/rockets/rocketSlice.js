@@ -4,13 +4,6 @@ import axios from 'axios';
 // action type ...
 const FETCHROCKETS = 'spaceTravelsHub/FETCHROCKETS';
 
-// fetch rockets...
-// const GetRockets = async () => {
-//   const url = 'https://api.spacexdata.com/v4/rockets';
-//   const res = await axios.get(url);
-
-// };
-
 const GetRockets = createAsyncThunk(FETCHROCKETS, async () => {
   const url = 'https://api.spacexdata.com/v4/rockets';
   const res = await axios.get(url);
