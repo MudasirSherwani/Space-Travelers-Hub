@@ -1,11 +1,19 @@
 import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css';
 import Navbar from './components/Navbar';
 import RocketsPage from './components/rockets/Rockets';
 import MyProfilePage from './components/profile/MyProfile';
 import MissionsPage from './components/missions/Missions';
+import { GetRockets } from './redux/rockets/rocketSlice';
 
 function App() {
+  const dispatch = useDispatch(); // fetch rockets list when page loads for the first time..
+  useEffect(() => {
+    dispatch(GetRockets());
+  }, [dispatch]);
+
   return (
     <div className="App">
       <header className="App-header">
