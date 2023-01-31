@@ -5,9 +5,15 @@ const MissionPage = (props) => {
   const { id, name, description } = props;
   return (
     <tr id={id} className="table">
-      <td className="mission-name">{name}</td>
+      <td className="mission_name-td">{name}</td>
       <td className="mission-description">
         {description}
+      </td>
+      <td>
+        <button type="button" className="member-btn">NOT A MEMBER</button>
+      </td>
+      <td>
+        <button type="button" className="join-btn">Join Mission</button>
       </td>
     </tr>
   );

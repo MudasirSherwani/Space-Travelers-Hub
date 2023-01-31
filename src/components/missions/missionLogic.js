@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { CallMissionApi } from '../../redux/mission/missionFetch';
 import MissionPage from './Missions';
+import './mission.css';
 
 const MissionsLogic = () => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const MissionsLogic = () => {
             <th className="mission_name">Mission</th>
             <th className="description">Description</th>
             <th className="status">Status</th>
-            <th className="member hide">Status</th>
+            <th className="hidden"> </th>
           </tr>
           {missionsStat.map((mission) => (
             <MissionPage
