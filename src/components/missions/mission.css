@@ -1,0 +1,49 @@
+.mission_name-td {
+  vertical-align: top;
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  border: 0.1px solid gray;
+  border-collapse: collapse;
+}
+
+tr {
+  height: 30px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+table {
+  margin: 10px;
+  table-layout: auto;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 234, 234);
+}
+
+.status,
+.hidden {
+  width: 120px;
+}
+
+.join-btn {
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.member-btn {
+  background-color: rgb(170, 167, 167);
+  border: none;
+  border-radius: 3px;
+  width: 110px;
+  height: 20px;
+}
