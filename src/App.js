@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import RocketsPage from './components/rockets/Rockets';
 import MyProfilePage from './components/profile/MyProfile';
 import MissionsLogic from './components/missions/missionLogic';
+import { GetRockets } from './redux/rockets/rocketSlice';
 
 function App() {
   const dispatch = useDispatch(); // fetch rockets list when page loads for the first time..
