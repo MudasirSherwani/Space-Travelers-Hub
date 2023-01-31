@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import reducerForMission from './mission/missionFetch';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    mission: reducerForMission,
+  },
 });
 
 export default store;
