@@ -4,6 +4,7 @@ import axios from 'axios';
 // action type ...
 const FETCHROCKETS = 'spaceTravelsHub/FETCHROCKETS';
 const BOOKROCKET = 'spaceTravelsHub/BOOKROCKET';
+const CANCELRESERVATION = 'spaceTravelsHub/CANCELRESERVATION';
 
 const GetRockets = createAsyncThunk(FETCHROCKETS, async () => {
   const url = 'https://api.spacexdata.com/v4/rockets';
@@ -14,6 +15,11 @@ const GetRockets = createAsyncThunk(FETCHROCKETS, async () => {
 
 export const bookRocket = (payload) => ({
   type: BOOKROCKET,
+  payload,
+});
+
+export const cancelReservation = (payload) => ({
+  type: CANCELRESERVATION,
   payload,
 });
 
@@ -36,6 +42,15 @@ const rocketReducer = createSlice({
       const newState = state.data.map((rocket) => {
         if (rocket.id !== action.payload.id) return rocket;
         return { ...rocket, reserved: true };
+      });
+      state.data = newState;
+      // console.log(JSON.parse(JSON.stringify(state.data)));
+    });
+
+    builder.addCase(CANCELRESERVATION, (state, action) => {
+      const newState = state.data.map((rocket) => {
+        if (rocket.id !== action.payload.id) return rocket;
+        return { ...rocket, reserved: false };
       });
       state.data = newState;
       // console.log(JSON.parse(JSON.stringify(state.data)));
