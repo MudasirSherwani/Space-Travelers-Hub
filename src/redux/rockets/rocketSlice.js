@@ -44,7 +44,6 @@ const rocketReducer = createSlice({
         return { ...rocket, reserved: true };
       });
       state.data = newState;
-      // console.log(JSON.parse(JSON.stringify(state.data)));
     });
 
     builder.addCase(CANCELRESERVATION, (state, action) => {
@@ -53,7 +52,6 @@ const rocketReducer = createSlice({
         return { ...rocket, reserved: false };
       });
       state.data = newState;
-      // console.log(JSON.parse(JSON.stringify(state.data)));
     });
   },
 });
