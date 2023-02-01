@@ -4,7 +4,6 @@ import { bookRocket, cancelReservation } from '../../redux/rockets/rocketSlice';
 
 const RocketsPage = () => {
   const rocketList = useSelector((state) => state.rockets.data);
-
   return (
     <div className="container">
       {rocketList.map((rocket) => (
@@ -14,26 +13,33 @@ const RocketsPage = () => {
   );
 };
 
+// manage reservation state...
 const RocketCard = ({ rocket }) => {
-  const [reserved, setReserved] = useState(false);
-  const [btnText, setBtnText] = useState('Reserve Rocket');
-  const [btnClass, setBtnClass] = useState('reserve-btn');
+  const [reserved, setReserved] = useState(rocket.reserved);
+  const [btnText, setBtnText] = useState(
+    reserved ? 'Cancel Reservation' : 'Reserve Rocket',
+  );
+  const [btnClass, setBtnClass] = useState(
+    reserved ? 'cancel-btn' : 'reserve-btn',
+  );
   const dispatch = useDispatch();
 
+  // handle button click events ...
   const onClickHandler = (id) => {
-    if (!reserved) {
-      dispatch(bookRocket({ id }));
-      setReserved(true);
-      setBtnText('Cancel Reservation');
-      setBtnClass('cancel-btn');
-    } else {
+    if (reserved) {
       dispatch(cancelReservation({ id }));
       setReserved(false);
       setBtnText('Reserve Rocket');
       setBtnClass('reserve-btn');
+    } else {
+      dispatch(bookRocket({ id }));
+      setReserved(true);
+      setBtnText('Cancel Reservation');
+      setBtnClass('cancel-btn');
     }
   };
 
+  // build updated UI...
   return (
     <div className="rocket-card">
       <div className="">
@@ -48,11 +54,9 @@ const RocketCard = ({ rocket }) => {
 
         <p className="description">
           {reserved && (
-
-          <button type="button" className="badge">
-            Reserved
-          </button>
-
+            <button type="button" className="badge">
+              Reserved
+            </button>
           )}
           {rocket.description}
         </p>
