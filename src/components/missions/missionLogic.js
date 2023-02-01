@@ -6,12 +6,12 @@ import MissionPage from './Missions';
 import './mission.css';
 
 const MissionsLogic = () => {
-  const dispatch = useDispatch();
+  const dispatchMissionState = useDispatch();
   const missionsStat = useSelector((state) => state.Missions);
   useEffect(() => {
-    if (missionsStat.length === 0) dispatch(CallMissionApi());
+    if (missionsStat.length === 0) dispatchMissionState(CallMissionApi());
   },
-  [dispatch]);
+  [dispatchMissionState]);
 
   return (
     <div className="Missions-container">
@@ -29,6 +29,7 @@ const MissionsLogic = () => {
               id={mission.mission_id}
               name={mission.mission_name}
               description={mission.description}
+              reserved={mission.reserved}
             />
           ))}
         </tbody>
