@@ -44,7 +44,7 @@ In this Project, we have worked with the real live data from the SpaceX API. Our
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a> API </a></li>
+    <li><a>spacexdata API </a></li>
   </ul>
 </details>
 
@@ -56,12 +56,16 @@ The Rockets section displays a list of all available SpaceX rockets. Users can b
 **Missions**
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
+**My Profile**
+The My Profile section displays all reserved rockets and space missions.
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Space Traverlers Hub]()
+- [Space Traverlers Hub](https://majestic-tartufo-7d0687.netlify.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,6 +172,7 @@ If you like this project please follow me on github and give stars to my repo.
 
 
 I would like to thanks Microverse to guide me to complete this project.
+Again i would like to thanks spacexdata.com to provide us API link.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
