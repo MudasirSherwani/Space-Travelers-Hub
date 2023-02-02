@@ -38,11 +38,10 @@
   letter-spacing: 1.9px;
   font-size: 13px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.486);
+  color: #0290ff;
 }
 
 .nav-text.active {
-  color: #0290ff;
   text-decoration: underline;
 }
 
@@ -112,7 +111,7 @@
 }
 
 .badge {
-  background-color: #3a8891;
+  background-color: #18a2b8;
   width: auto;
   height: 20px;
   border-style: none;

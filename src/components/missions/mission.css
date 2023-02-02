@@ -45,7 +45,7 @@ tr:nth-child(even) {
 .mission-leave {
   padding: 4px;
   color: white;
-  background-color: rgb(170, 167, 167);
+  background-color: #6d757d;
   border: none;
   border-radius: 3px;
   width: 110px;
@@ -53,7 +53,7 @@ tr:nth-child(even) {
 }
 
 .mission-join {
-  background-color: rgba(32, 125, 247, 0.877);
+  background-color: #18a2b8;
   color: white;
   font-size: 14px;
   padding: 4px;
