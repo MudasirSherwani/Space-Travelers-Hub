@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* navBar component... */
 .nav-bar {
   display: flex;
   align-items: center;
@@ -67,4 +68,36 @@
     -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg);
   }
+}
+
+/* Rocket page..... */
+.rocket-card {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.rocket-img {
+  height: 200px;
+  width: 250px;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reserve-btn {
+  height: 40px;
+  border-radius: 6px;
+  width: 150px;
+  background-color: #0290ff;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-family: "Source+Sans+Pro", serif;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  font-size: 16px;
 }
