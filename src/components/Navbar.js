@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import logo from '../images/planet.png';
 
 const Navbar = () => {
@@ -23,16 +23,16 @@ const Navbar = () => {
       </div>
       <div />
       <div className="nav-links">
-        <Link to="/" className={`nav-text ${activeLink === 'rockets' ? 'active' : ''}`}>
+        <NavLink to="/" className={`nav-text ${activeLink === 'rockets' ? 'active' : ''}`}>
           Rockets
-        </Link>
-        <Link to="/missions" className={`nav-text ${activeLink === 'missions' ? 'active' : ''}`}>
+        </NavLink>
+        <NavLink to="/missions" className={`nav-text ${activeLink === 'missions' ? 'active' : ''}`}>
           Missions
-        </Link>
+        </NavLink>
         <div className="divider" />
-        <Link to="/myProfile" className={`nav-text ${activeLink === 'myProfile' ? 'active' : ''}`}>
+        <NavLink to="/myProfile" className={`nav-text ${activeLink === 'myProfile' ? 'active' : ''}`}>
           My Profile
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

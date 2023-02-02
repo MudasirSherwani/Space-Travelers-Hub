@@ -6,24 +6,24 @@ In this Project, we have worked with the real live data from the SpaceX API. Our
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📖 Space Traverlers Hub ](#-space-traverlers-hub-)
+- [📗 Table of Contents](#-table-of-contents)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Testing](#testing)
+    - [Deployment](#deployment)
+  - [Authors](#authors)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -78,6 +78,8 @@ The My Profile section displays all reserved rockets and space mission.
 - Extract and open repo folder into visual studio code or any other Text Editor Software.
 - GitHub Repositry URL: https://github.com/MudasirSherwani/Space-Travelers-Hub.git
   To get a local copy up and running follow these simple example steps.
+  
+  `git clone  https://github.com/MudasirSherwani/Space-Travelers-Hub.git`
 
 
 ### Prerequisites
