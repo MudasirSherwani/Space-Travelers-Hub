@@ -57,7 +57,7 @@ The Rockets section displays a list of all available SpaceX rockets. Users can b
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
 **My Profile**
-The My Profile section displays all reserved rockets and space missions.
+The My Profile section displays all reserved rockets and space mission.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
