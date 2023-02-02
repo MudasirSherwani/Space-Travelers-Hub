@@ -44,7 +44,7 @@ In this Project, we have worked with the real live data from the SpaceX API. Our
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a>spacexdata API </a></li>
+    <li><a> API </a></li>
   </ul>
 </details>
 
@@ -56,6 +56,7 @@ The Rockets section displays a list of all available SpaceX rockets. Users can b
 **Missions**
 The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
+<<<<<<< HEAD
 **My Profile**
 The My Profile section displays all reserved rockets and space mission.
 
@@ -99,6 +100,47 @@ Install this project with:
 ```
 
 
+=======
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Space Traverlers Hub]()
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+- Open GitHub URL of repositry.
+- Download Code repo in zip.
+- Extract and open repo folder into visual studio code or any other Text Editor Software.
+- GitHub Repositry URL: https://github.com/MudasirSherwani/Space-Travelers-Hub.git
+  To get a local copy up and running follow these simple example steps.
+
+
+### Prerequisites
+- Visual Studio Code
+- Knowldege About HTML / CSS / JAVASCRIPT ES6
+- Webhint
+- Stylelint
+- ESLint
+- node_modules checker
+- Github
+
+
+### Install
+
+Install this project with:
+
+```sh
+  npm install
+```
+
+
+>>>>>>> origin/add-navbar-component
 ### Usage
 
 To run the project in a development server, execute the following command:
@@ -172,7 +214,10 @@ If you like this project please follow me on github and give stars to my repo.
 
 
 I would like to thanks Microverse to guide me to complete this project.
+<<<<<<< HEAD
 Again i would like to thanks spacexdata.com to provide us API link.
+=======
+>>>>>>> origin/add-navbar-component
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
