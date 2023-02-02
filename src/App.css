@@ -1,39 +1,132 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* navBar component... */
+.nav-bar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-@keyframes App-logo-spin {
+.logo {
+  height: 50px;
+  -webkit-animation: spin 10s infinite;
+  animation: spin 10s infinite;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.divider {
+  border-left: 2px solid #ccc;
+}
+
+.nav-text {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.9px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #0290ff;
+}
+
+.nav-text.active {
+  text-decoration: underline;
+}
+
+@-webkit-keyframes spin {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotateY(0deg);
   }
 
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotateY(-360deg);
   }
+}
+
+@keyframes spin {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Rocket page..... */
+.rocket-card {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.rocket-img {
+  height: 200px;
+  width: 250px;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reserve-btn,
+.cancel-btn {
+  display: flex;
+  height: 40px;
+  border-radius: 6px;
+  width: 25%;
+  background-color: #0290ff;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: black;
+}
+
+.badge {
+  background-color: #18a2b8;
+  width: auto;
+  height: 20px;
+  border-style: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 0px;
+  color: #fff;
+}
+
+.description {
+  letter-spacing: 1.9px;
+  font-family: "Inter", sans-serif, serif;
+  font-size: 15px;
+  line-height: 24px;
 }
