@@ -1,6 +1,3 @@
-<a name="readme-top"></a>
-# 📖 Space Traverlers Hub <a name="about-project"></a>
-
 In this Project, we have worked with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 
@@ -182,4 +179,5 @@ Again i would like to thanks spacexdata.com to provide us API link.
 This project is [MIT](https://github.com/MudasirSherwani/Space-Travelers-Hub/blob/Development/LICENSE.md) licensed.
  
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+=======
+This project is [MIT](https://github.com/MudasirSherwani/Space-Travelers-Hub/blob/Development/LICENSE.md) licensed.

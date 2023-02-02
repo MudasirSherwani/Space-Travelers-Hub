@@ -1,7 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 
 /* navBar component... */
 .nav-bar {
@@ -49,7 +45,6 @@
   from {
     -webkit-transform: rotateY(0deg);
   }
-
   to {
     -webkit-transform: rotateY(-360deg);
   }
