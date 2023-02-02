@@ -1,70 +1,185 @@
-# Getting Started with SPACE TRAVEL
+<a name="readme-top"></a>
+# 📖 Space Traverlers Hub <a name="about-project"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this Project, we have worked with the real live data from the SpaceX API. Our task is to build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-## Available Scripts
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
+- HTML
+- CSS
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://github.com/microverseinc/curriculum-javascript/blob/main/todo-list/lessons/webpack_v1_1.md)
+- [Redux]
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://netlify.app/">Netlify</a></li>
+  </ul>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a>spacexdata API </a></li>
+  </ul>
+</details>
 
-### `npm run build`
+### Key Features <a name="key-features"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Rockets**
+The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Missions**
+The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**My Profile**
+The My Profile section displays all reserved rockets and space mission.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [Space Traverlers Hub](https://majestic-tartufo-7d0687.netlify.app/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Open GitHub URL of repositry.
+- Download Code repo in zip.
+- Extract and open repo folder into visual studio code or any other Text Editor Software.
+- GitHub Repositry URL: https://github.com/MudasirSherwani/Space-Travelers-Hub.git
+  To get a local copy up and running follow these simple example steps.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
+- Visual Studio Code
+- Knowldege About HTML / CSS / JAVASCRIPT ES6
+- Webhint
+- Stylelint
+- ESLint
+- node_modules checker
+- Github
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Install
 
-### Advanced Configuration
+Install this project with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```sh
+  npm install
+```
+
+
+### Usage
+
+To run the project in a development server, execute the following command:
+
+```sh
+  npm start
+```
+
+### Testing
+
+To run the tests in a development server, execute the following command:
+
+```sh
+  npm test
+```
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using:
 
-### if `npm run build` fails to minify
+https://netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Authors
+
+👤 **Mudasir Sherwani**
+
+- GitHub: [@Mudasir Sherwani](https://github.com/MudasirSherwani)
+- Twitter: [@Mudasir Sherwani](https://twitter.com/mudasirsherwani)
+- LinkedIn: [Mudasir Sherwani](https://linkedin.com/in/mudasir-ashraf-071321a4)
+
+
+👤 **Samuel Kyere**
+
+- GitHub: [@githubhandle](https://github.com/admirerbrown)
+- Twitter: [@twitterhandle](https://twitter.com/brown_admirer)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-ntow-kyere-5036741b4/)
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+
+- [ ] **Wroking with Dragon Section**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/MudasirSherwani/Space-Travelers-Hub/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please follow me on github and give stars to my repo.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+
+I would like to thanks Microverse to guide me to complete this project.
+Again i would like to thanks spacexdata.com to provide us API link.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/MudasirSherwani/Space-Travelers-Hub/blob/Development/LICENSE.md) licensed.
+ 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
