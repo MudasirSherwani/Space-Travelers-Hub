@@ -45,6 +45,7 @@
   from {
     -webkit-transform: rotateY(0deg);
   }
+
   to {
     -webkit-transform: rotateY(-360deg);
   }

@@ -1,4 +1,7 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import RocketsPage from './components/rockets/Rockets';
 import MyProfilePage from './components/profile/MyProfile';
@@ -22,7 +25,7 @@ function App() {
         </Routes>
       </header>
     </div>
-    );
+  );
 }
 
 export default App;
