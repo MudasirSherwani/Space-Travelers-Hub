@@ -88,10 +88,12 @@
   gap: 15px;
 }
 
-.reserve-btn {
+.reserve-btn,
+.cancel-btn {
+  display: flex;
   height: 40px;
   border-radius: 6px;
-  width: 150px;
+  width: 25%;
   background-color: #0290ff;
   letter-spacing: 0.5px;
   font-weight: 700;
@@ -99,5 +101,27 @@
   color: #fff;
   border-style: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  color: black;
+}
+
+.badge {
+  background-color: #3a8891;
+  width: auto;
+  height: 20px;
+  border-style: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 0px;
+  color: #fff;
 }
